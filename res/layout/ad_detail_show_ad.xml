@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0" >
+
+    <RelativeLayout
+        android:id="@+id/ad_datail_show_ad_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/flow_ball_ani_full_green" >
+
+        <ImageView
+            android:id="@+id/ad_datail_show_ad_titleicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/splash_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ad_datail_show_ad_titleicon"
+            android:text="广告插件"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_datail_show_ad_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_datail_show_ad_rl1" >
+
+        <TextView
+            android:id="@+id/ad_datail_show_ad_titleicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="广告插件:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ad_datail_show_ad_titleicon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ad_datail_show_ad_titleicon"
+            android:text="是由手机广告商开发出来的广告模块，开发者将这些广告模块嵌入到自己的软件应用中，展现给用户。"
+            android:textColor="#141414"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_datail_show_ad_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_datail_show_ad_rl2" >
+
+        <TextView
+            android:id="@+id/ad_datail_show_ad_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="插件数量："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ad_datail_show_ad_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+             android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ad_datail_show_ad_num"
+            android:text="1款"
+            android:textColor="#141414"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_datail_show_ad_rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_datail_show_ad_rl3" >
+
+        <TextView
+            android:id="@+id/ad_datail_show_ad_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:text="插件名称："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ad_datail_show_ad_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ad_datail_show_ad_name"
+            android:text="inmobie"
+             android:layout_marginTop="5dp"
+            android:layout_alignTop="@+id/ad_datail_show_ad_name"
+            android:textColor="#141414"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ad_datail_show_ad_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_datail_show_ad_rl4"
+        android:layout_margin="5dp"
+        android:background="@drawable/appmgr_btn_upgrade_selected"
+        android:text="关闭"
+        android:textColor="#00aa00"
+        android:textSize="20sp" />
+
+</RelativeLayout>

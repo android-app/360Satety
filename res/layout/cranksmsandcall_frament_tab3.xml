@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/cranksms_framelayout_diffcall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/littlegray"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/crank_show_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg3_normal" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list_bg_without_icon"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/tag_crankcall"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="骚扰电话"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/rs_achievement_right_arrow" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" >
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/tag_crankad"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="广告推销"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/rs_achievement_right_arrow" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" >
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/tag_crankhouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="房产推销"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/rs_achievement_right_arrow" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" >
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/tag_crankeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="快递送餐"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" >
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/rs_achievement_right_arrow" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" >
+                </ImageView>
+
+                <RelativeLayout
+                    android:id="@+id/tag_cranke_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/crank_addtext"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@+id/crank_addimg"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="添加新标记"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/crank_addimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/call_show_add_mark_normal" >
+                    </ImageView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

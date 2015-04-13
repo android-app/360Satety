@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/report_lottery_top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/report_lottery_title_lottery" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/report_lottery_title_report" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/report_lottery_middle_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/not_get_prize_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+             android:gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:text="累积举报恶意广告软件2个!您可以将此结果分享到微博，号召您的粉丝一起举报恶意广告!"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/report_lottery_bottom_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ad_jubao_dialog_share"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+             android:layout_gravity="center_vertical"
+            android:background="@drawable/title_bar_set_btn_normal"
+            android:text="分享到微博"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ad_jubao_dialog_fanhui"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+             android:layout_gravity="center_vertical"
+            android:background="@drawable/scanbar_bg_full"
+            android:text="返回"
+            android:textColor="#B2C3C9"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/crank_linearlyout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/flow_ball_ani_full_green"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/crank_main_return"
+            android:layout_height="30dp"
+            android:layout_width="50dp"
+            android:textSize="14sp" 
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cranksmsandcall_return"
+            android:gravity="center"
+            android:text="返回" >
+        </Button>
+
+        <TextView
+            android:id="@+id/cranksmsandcall_main_showtv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="垃圾短息"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/crank_main_setbtn"
+            android:layout_width="50dp"
+            android:textSize="14sp" 
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cranksmsandcall_setbtn"
+            android:gravity="center"
+            android:text="设置" >
+        </Button>
+    </LinearLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/crank_linearlyout"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+             >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@android:id/tabs"
+                >
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/black_bg"
+                >
+            </TabWidget>
+           
+        </RelativeLayout>
+        
+        
+    </TabHost>
+
+</RelativeLayout>

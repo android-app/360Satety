@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/flow_ball_ani_full_green"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/crank_to_showtv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="添加黑名单"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/crank_addsmstoblacklist"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="40dp"
+        android:gravity="center_vertical"
+        android:paddingTop="30dp"
+        android:text="从短息记录中添加"
+        android:textColor="@color/black"
+        android:textSize="15sp" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/littlegray" />
+
+    <TextView
+        android:id="@+id/crank_addcalltoblacklist"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="从通讯记录中添加"
+        android:textColor="@color/black"
+        android:textSize="15sp" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/littlegray" />
+
+    <TextView
+        android:id="@+id/crank_addcalltoblacklist"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="从联系人中添加"
+        android:textColor="@color/black"
+        android:textSize="15sp" >
+    </TextView>
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/littlegray" />
+    
+    <TextView
+        android:id="@+id/crank_addcalltoblacklist"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="手工输入号码"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" >
+    </TextView>
+</LinearLayout>

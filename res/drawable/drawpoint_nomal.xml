@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/privacy_btn_code_lock_default_holo">
+    </item>
+    <item android:drawable="@drawable/privacy_indicator_code_lock_point_area_default_holo">
+    </item>
+
+</layer-list>

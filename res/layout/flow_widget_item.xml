@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818" 
+     >
+    <ImageView
+        android:id="@+id/flow_widget_item_iv1"
+        android:layout_width="40dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true" 
+        android:src="@drawable/flow_wediget_item_selector1" 
+        />
+    <TextView
+        android:id="@+id/flow_widget_item_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="流量监控"
+        android:textColor="@drawable/flow_wediget_item_tvselector"
+        android:layout_below="@id/flow_widget_item_iv1"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

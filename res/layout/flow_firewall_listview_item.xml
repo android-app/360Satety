@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/flow_firewall_app_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/flow_firewall_app_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/flow_firewall_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="书旗小说"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/flow_firewall_alldata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flow_firewall_app_name"
+            android:layout_marginLeft="5dp"
+            android:text="23.33M"
+            android:textColor="#606060"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/flow_firewall_ll_smallwifi"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/flow_firewall_listitem_wifibc_selector"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/flow_firewall_smallwifi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/firewall_switcher_wifi_on"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flow_firewall_ll_smalldata"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/flow_firewall_ll_smallwifi"
+            android:background="@drawable/flow_firewall_listitem_databc_selector"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/flow_firewall_smalldata"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/firewall_switcher_mobile_data_on"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

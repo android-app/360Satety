@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 本月流量排行 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/flow_sort_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11月1日"
+            android:textColor="#00CE00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共产生流量如下："
+            android:textColor="#606060"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/flow_sort_nouseflow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="本月暂无流量排行数据，请稍后查看"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/flow_sort_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+          <ListView
+              android:id="@+id/flow_sort_listview1"
+             android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+              />
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</LinearLayout>

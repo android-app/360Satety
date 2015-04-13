@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0" >
+
+    <RelativeLayout
+        android:id="@+id/ad_fankui_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/flow_ball_ani_full_green" >
+
+        <ImageView
+            android:id="@+id/ad_fankui_titleicon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/splash_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ad_fankui_titleicon"
+            android:text="反馈"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_fankui_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ad_fankui_rl1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="广告描述不正确"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/ad_fankui_cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/ad_share_cb" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ad_fankui_rl2"
+        android:layout_marginLeft="5dp"
+        android:background="#E8E8E8" />
+
+    <RelativeLayout
+        android:id="@+id/ad_fankui_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ad_fankui_rl2" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="该软件没有广告"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <CheckBox
+             android:id="@+id/ad_fankui_cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/ad_share_cb" />
+    </RelativeLayout>
+<View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ad_fankui_rl3"
+        android:layout_marginLeft="5dp"
+        android:background="#E8E8E8" />
+    <RelativeLayout
+        android:id="@+id/ad_fankui_rl4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ad_fankui_rl3" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="有通知栏广告未识别"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <CheckBox
+             android:id="@+id/ad_fankui_cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/ad_share_cb" />
+    </RelativeLayout>
+<View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ad_fankui_rl4"
+        android:layout_marginLeft="5dp"
+        android:background="#E8E8E8" />
+    <RelativeLayout
+        android:id="@+id/ad_fankui_rl5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ad_fankui_rl4" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="广告禁止后程序异常"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <CheckBox
+             android:id="@+id/ad_fankui_cb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/ad_share_cb" />
+    </RelativeLayout>
+<View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ad_fankui_rl5"
+        android:layout_marginLeft="5dp"
+        android:background="#E8E8E8" />
+    <RelativeLayout
+        android:id="@+id/ad_fankui_rl6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ad_fankui_rl5" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="其他问题反馈"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <CheckBox
+             android:id="@+id/ad_fankui_cb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/ad_share_cb" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ad_fankui_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_fankui_rl6"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:id="@+id/ad_fankui_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_fankui_et"
+       >
+
+        <Button
+            android:id="@+id/ad_fankui_tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_black_normal"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/ad_fankui_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bottom_grey_normal"
+            android:text="取消"
+            android:textColor="#41434B"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>

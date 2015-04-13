@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/main_slidingmenu_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/menu_net_update"
+        android:text="联网升级"
+        android:textColor="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/main_slidingmenu_recommand_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/recommand_friend_normal"
+        android:text="推荐好友"
+        android:textColor="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/main_slidingmenu_submit_proposal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/submit_proposal_normal"
+        android:text="问题反馈"
+        android:textColor="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/main_slidingmenu_help_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/help_information_normal"
+        android:text="帮助信息"
+        android:textColor="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/main_slidingmenu_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:drawableTop="@drawable/main_about_normal"
+        android:text="关于"
+        android:textColor="#f0f0f0" />
+
+</LinearLayout>

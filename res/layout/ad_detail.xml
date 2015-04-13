@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/achievement_show_btn_normal" >
+
+    <RelativeLayout
+        android:id="@+id/ad_detail_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/flow_ball_ani_full_green" >
+
+        <Button
+            android:id="@+id/ad_detail_fanhui1"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/title_bar_btn"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="广告详情"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/ad_detail_fankui"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/title_bar_set_btn_normal"
+            android:text="反馈"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_detail_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_detail_rl1"
+        android:layout_margin="5dp"
+        android:background="@drawable/adblock_title_middle_bg" >
+
+        <RelativeLayout
+            android:id="@+id/ad_detail_rl3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ad_detail_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/ad_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/ad_detail_icon"
+                android:text="360安全卫士"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ad_detail_info"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/ad_detail_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/ad_detail_icon"
+                android:text="含正常广告，未发现风险"
+                android:textColor="#7AD730"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/ad_detail_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ad_detail_1l14"
+            android:layout_below="@+id/ad_detail_rl3" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/ad_detail_rl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/adblock_title_middle_bg" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="安全认证"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ad_detail_rl5"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="经360检测，此软件为安全软件"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ad_detail_rl6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/adblock_title_middle_bg" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="广告和推送"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ad_detail_rl7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" >
+
+                    <RelativeLayout
+                        android:id="@+id/ad_detail_rl8"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" >
+
+                        <TextView
+                            android:id="@+id/ad_detail_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="含有8款广告插件"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/ad_detail_show_ad"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/personal_achievement_arrow" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ad_detail_rl9"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/ad_detail_rl8" >
+
+                        <TextView
+                            android:id="@+id/ad_detail_tuisong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="允许推送通知栏消息"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <ToggleButton
+                            android:id="@+id/ad_detail_tb_yunxu"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ad_detail_yunxu"
+                            android:textOff=""
+                            android:textOn="" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ad_detail_rl10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/adblock_title_middle_bg" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="联网防火墙"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ad_detail_rl11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/ad_detail_zhanxian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="广告展现耗费流量，非必须联网软件禁止联网"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/ad_detail_rl12"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ad_detail_zhanxian" >
+
+                        <ImageView
+                            android:id="@+id/ad_detail_2g3g"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                           android:layout_centerVertical="true"
+                            android:background="@drawable/ad_detail_2g3g" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/ad_detail_2g3g"
+                            android:gravity="center_vertical"
+                            android:text="软件2G/3G联网"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <ToggleButton
+                            android:id="@+id/ad_detail_tb_2g3g"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ad_detail_yunxu"
+                            android:textOff=""
+                            android:textOn="" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ad_detail_rl13"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ad_detail_rl12" >
+
+                        <ImageView
+                            android:id="@+id/ad_detail_wifi"
+                            android:layout_width="30dp"
+                             android:layout_centerVertical="true"
+                            android:layout_height="30dp"
+                            android:background="@drawable/ad_detail_wifi" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/ad_detail_wifi"
+                            android:gravity="center_vertical"
+                            android:text="软件WIFI联网"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <ToggleButton
+                            android:id="@+id/ad_detail_tb_wifi"
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ad_detail_yunxu"
+                            android:textOff=""
+                            android:textOn="" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ad_detail_1l14"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                 android:id="@+id/ad_detail_Uninstall"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottom_grey_normal"
+                android:text="卸载"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/ad_detail_fanhui2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bottom_grey_normal"
+                android:text="返回"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

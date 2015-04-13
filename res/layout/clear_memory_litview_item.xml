@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/clear_memory_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp" />
+
+    <RelativeLayout
+        android:id="@+id/flow_sort_app_nameup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/clear_memory_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/clear_memory_app_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:lines="1"
+            android:text="书旗小说"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/clear_memory_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clear_memory_app_name"
+            android:layout_marginLeft="4dp"
+            android:text="内存:"
+            android:textColor="#606060"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/clear_memoryitem_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/clear_memory_tv1"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/clear_memory_tv1"
+            android:text="23.33M"
+            android:textColor="#606060"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/clear_memory_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:button="@drawable/clearmemory_checkbox_selector" />
+
+</RelativeLayout>

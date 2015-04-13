@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_screen_bg" >
+
+    <ImageView
+        android:id="@+id/act_main_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingLeft="6dp"
+        android:paddingTop="4dp"
+        android:src="@drawable/splash_logo" />
+
+    <ImageView
+        android:id="@+id/act_main_logo2"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/act_main_logo"
+        android:paddingTop="4dp"
+        android:src="@drawable/main_screen_logo" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/act_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_main_logo2"
+        android:layout_marginLeft="8dp" />
+    <!-- 选项 -->
+
+    <ImageView
+        android:id="@+id/act_main_option"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/main_menu_normal" />
+
+    <ImageView
+        android:id="@+id/act_main_set"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/assist_flow_ic_setting" />
+    <!-- 必备 -->
+
+    <ImageView
+        android:id="@+id/act_main_necessary"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/hundredmillion_noti_model" />
+    <!-- 页码 -->
+
+    <ImageView
+        android:id="@+id/act_main_pagenum"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/main_page_one" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/act_main_zhedang"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

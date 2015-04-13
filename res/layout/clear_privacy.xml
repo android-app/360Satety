@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/flow_ball_ani_full_green" >
+
+        <Button
+            android:id="@+id/clear_memory_back"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cranksmsandcall_return"
+            android:paddingLeft="8dp"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="隐私痕迹清理"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/privacy_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="#ECECEC"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有可清理的使用痕迹"
+            android:textColor="#808080" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/clear_privacy_rl_look"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/privacy_content"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/clear_privacy_look"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sp_bank_web_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/clear_privacy_look"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:text="浏览器使用记录"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/clear_privacy_looktitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="未发现使用痕迹"
+                android:textColor="#202020"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+  
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/clear_privacy_rl_look"
+        android:layout_marginTop="5dp"
+        android:background="#c9c9c9" />
+
+    <RelativeLayout
+        android:id="@+id/clear_privacy_rl_marcket"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view1"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/clear_privacy_marcket"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/short_cut_app_market" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/clear_privacy_marcket"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:text="谷歌市场搜索记录"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/clear_privacy_marckettitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="未发现使用痕迹"
+                android:textColor="#202020"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/clear_privacy_rl_marcket"
+        android:layout_marginTop="5dp"
+        android:background="#c9c9c9" />
+
+    <RelativeLayout
+        android:id="@+id/clear_privacy_rl_cut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/view2"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/clear_privacy_cut"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/short_cut_use_tools" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/clear_privacy_cut"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:text="剪贴板使用记录"
+                android:textColor="#000000"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/clear_privacy_cuttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="未发现使用痕迹"
+                android:textColor="#202020"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/clear_privacy_rl_cut"
+        android:layout_marginTop="5dp"
+        android:background="#c9c9c9" />
+    
+    <Button
+        android:id="@+id/clear_privacy_btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/flow_btn_selector"
+        android:text="一键清理" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/clear_privacy_btn_clear"
+        android:layout_marginTop="5dp"
+        android:background="#c9c9c9" />
+
+</RelativeLayout>

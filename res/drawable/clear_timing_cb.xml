@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/assist_settings_switcher_on_normal" android:state_checked="true"></item>
+    <item android:drawable="@drawable/assist_settings_switcher_off_normal" ></item>
+   
+
+</selector>

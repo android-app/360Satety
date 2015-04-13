@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/flow_ball_ani_full_green" >
+
+        <Button
+            android:id="@+id/blacklist_return"
+            android:layout_width="50dp"
+            android:textSize="14sp" 
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cranksmsandcall_return"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/cranksmsandcall_sms_showtv"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/blacklist_return"
+            android:layout_alignBottom="@+id/blacklist_return"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/blacklist_return"
+            android:text="黑名单"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/blacklist_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@color/white" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/addblacklist"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/crank_sms_btnbg"
+        android:gravity="center"
+        android:text="添加黑名单"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

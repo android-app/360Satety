@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+ >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/flow_ball_ani_full_green" >
+
+        <Button
+            android:id="@+id/clear_memory_back"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cranksmsandcall_return"
+            android:paddingLeft="8dp"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <!-- 流量监控标题 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="内存优化"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        <!-- 定时按钮 -->
+
+        <Button
+            android:id="@+id/clear_memory_timing"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/clear_timing"
+            android:text="定时"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+<LinearLayout
+    android:id="@+id/memory_content"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ECECEC"
+    android:layout_below="@id/title"
+    >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="后台软件"
+        android:textColor="#808080"
+         />
+    <TextView
+        android:id="@+id/clear_memory_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textColor="#00EE00"       
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个，"
+        android:textColor="#808080"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余内存"
+        android:textColor="#808080"
+         />
+    <TextView
+        android:id="@+id/clear_memory_availsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="45M"
+        android:textColor="#00EE00"
+         />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/flow_memory_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/password_edit_confirm_icon_bg_normal"
+        android:layout_alignParentBottom="true"
+        >
+        
+    <Button
+        android:id="@+id/clear_memory_btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:text="一键清理"
+        android:background="@drawable/flow_btn_selector"
+        />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/flow_memory_ll"
+        android:layout_below="@id/memory_content"
+        >
+    <ListView
+        android:id="@+id/clear_memory_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+         
+        />
+    <RelativeLayout
+        android:id="@+id/clear_memory_rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"       
+        >
+    <ImageView   
+        android:id="@+id/clear_memory_loding"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:src="@drawable/privacy_password_pro_logo"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/clear_memory_loding"
+        android:text="正在加载。。。"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+</FrameLayout>
+</RelativeLayout>

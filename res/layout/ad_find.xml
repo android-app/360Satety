@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+ <RelativeLayout
+            android:layout_width="match_parent"
+             android:background="@drawable/flow_ball_ani_full_green"
+            android:layout_height="50dp" >
+
+            <Button
+                android:id="@+id/ad_main_fanhui"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/title_bar_btn"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="恶意广告拦截"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+      
+        </RelativeLayout>
+
+    <FrameLayout
+         android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/adblock_scanning_ani_bg" />
+
+        <Gallery
+            android:id="@+id/gallery1"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:spacing="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adblock_scan_nimbus_3" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adblock_scan_nimbus_2" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adblock_scan_nimbus_1" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adblock_scanning_ani_mask2" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/adblock_scanning_ani_mask" />
+
+    </FrameLayout>
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    >
+    
+    <ProgressBar
+        android:id="@+id/pb_gallery"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/tv_hint"
+        android:layout_marginBottom="50dp"
+        android:progressDrawable="@drawable/pb_gallery" />
+
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="正在加载，请稍候..."
+       android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>
+
+</LinearLayout>

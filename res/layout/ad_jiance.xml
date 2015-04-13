@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ad_jiance_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/flow_ball_ani_full_green" >
+
+        <Button
+            android:id="@+id/ad_jiance_fanhui"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/title_bar_btn"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="通知栏广告检测"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_jiance_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/assist_flow_bar_pressed" >
+
+        <ImageView
+            android:id="@+id/ad_jiance_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+              android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/arrow_up" />
+
+        <TextView
+            android:id="@+id/ad_jiance_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ad_jiance_iv1"
+            android:gravity="center_vertical"
+            android:text="当前通知栏显示的消息"
+            android:textColor="#7E7E7E"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ad_jiance_bt1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/adblock_counter_gray"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+          android:id="@+id/ad_jiance_message1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="暂无消息"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/ad_jiance_lv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/ad_jiance_rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/assist_flow_bar_pressed" >
+
+        <ImageView
+            android:id="@+id/ad_jiance_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+           android:layout_centerVertical="true"
+            android:background="@drawable/arrow_up" />
+
+        <TextView
+            android:id="@+id/ad_jiance_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ad_jiance_iv2"
+            android:gravity="center_vertical"
+            android:text="推送过消息的软件"
+            android:textColor="#7E7E7E"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ad_jiance_bt2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/adblock_counter_gray"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/ad_jiance_message2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="暂无消息"
+        android:visibility="gone" />
+     <ListView
+        android:id="@+id/ad_jiance_lv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </ListView>
+</LinearLayout>

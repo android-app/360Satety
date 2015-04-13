@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 联网防火墙 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/wifidata"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#DCFAEF" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:text="联网软件"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/flow_firewall_bigwifi"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/flow_firewall_wifibc_selector"
+            android:drawableTop="@drawable/flow_firewall_wifi_selector"
+            android:gravity="center"
+            android:text="WiFi"
+            android:textColor="@drawable/flow_firewall__tvselector"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/flow_firewall_bigdata"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/flow_firewall_bigwifi"
+            android:background="@drawable/firewall_btn_normal"
+            android:drawableTop="@drawable/firewall_switcher_mobile_data_on"
+            android:text="数据上网"
+            android:textColor="@drawable/flow_firewall__tvselector"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/flow_firewall_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wifidata"
+         />
+
+</RelativeLayout>
